@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/result_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/black_box"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/result_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/result_statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="抢单成功"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_22" />
+
+        <TextView
+            android:id="@+id/result_idText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="id"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_16" />
+
+
+        <TextView
+            android:id="@+id/result_finishBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#d3d3d3"
+            android:paddingBottom="8dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="8dp"
+            android:text="继续"
+            android:textColor="@color/text_gary_03"
+            android:textSize="@dimen/text_size_17" />
+
+    </LinearLayout>
+
+</RelativeLayout>

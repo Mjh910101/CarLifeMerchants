@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/repairList_refreshBtnBox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:background="@color/title_bg"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/repairList_refreshBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/refresh_icon"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="刷        新"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_18" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/repairList_dataList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/repairList_refreshBtnBox"
+            android:background="@color/text_white"
+            android:divider="@color/line_gary_02"
+            android:dividerHeight="1dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/repairList_dataList"
+            android:background="@color/line_gary_02" />
+
+        <include layout="@layout/layout_progress" />
+
+    </RelativeLayout>
+
+</LinearLayout>

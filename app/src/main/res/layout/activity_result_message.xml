@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/result_message_icon" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:text="抢单资料已提交，请等待客户确定！"
+        android:textColor="@color/title_bg"
+        android:textSize="@dimen/text_size_18" />
+
+
+    <TextView
+        android:id="@+id/resultMessage_backBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/title_bg"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="确        定"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_size_17" />
+
+</LinearLayout>
