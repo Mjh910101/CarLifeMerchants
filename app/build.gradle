@@ -55,6 +55,6 @@ dependencies {
     compile files('libs/protobuf-java-2.6.1.jar')
     compile files('libs/BaiduLBS_Android.jar')
     compile files('libs/library-1.2.2.jar')
-    compile files('libs/avoscloud-push-v3.13.6.jar')
-    compile files('libs/avoscloud-sdk-v3.13.6.jar')
+    compile files('libs/avoscloud-push-v3.13.7.jar')
+    compile files('libs/avoscloud-sdk-v3.13.7.jar')
 }
